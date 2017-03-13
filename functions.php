@@ -5,7 +5,8 @@ function rattanapol_resources(){
 	wp_enqueue_style('bootstrap',get_template_directory_uri() .('/css/bootstrap-3.3.7-dist/css/bootstrap.css'));
 }
 add_action('wp_enqueue_scripts',"rattanapol_resources");
-
+add_theme_support( 'post-thumbnails' );
+add_image_size('custom-size',200,150);
 //navigation menus
 register_nav_menus(array(
 	'primary'=> __( 'Primary Menu'),
