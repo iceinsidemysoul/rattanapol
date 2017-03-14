@@ -213,8 +213,8 @@ article.page h2 {
 /* --Page Layout-- */
 
 /* image in post*/
-.post img{
-	width: 100%;
+p img{
+	width: 45%;
 	margin:5px 0px 5px 0px;
 }
 /* Pagination */
