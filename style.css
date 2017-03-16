@@ -4,22 +4,7 @@ Author: Private
 Version: 1.0
 */
 
-/* General Layout */
-/*
-html {
-	padding: 0;
-	margin: 0;
-}
 
-body {
-	padding: 0;
-	margin: 0;
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	color: #333;
-	background-color:#000;
-}
-*/
 a:link,
 a:visited {
 	color: #006ec3;
@@ -49,7 +34,193 @@ div.container {
 	padding-right: 20px;
 }
 
-/* Header */
+/* Header nav */
+
+.menu-primary-menu-links-container ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#333333;
+	color:white;
+}
+.menu-primary-menu-links-container ul li{
+	float:left;
+	padding-top:5px;
+	width:16.66667%;
+	background-color:dimgray;
+	text-align:center;
+	border:1px solid darkslategray;
+}
+.menu-primary-menu-links-container ul li a{
+	display:inline-block;
+	color:black;
+	text-decoration:none;
+}
+.menu-primary-menu-links-container ul li:hover{
+	background-color:#898989;
+}
+li.menu-item-72{/*dropdown */
+	border-right:none;
+    display: inline-block;
+}
+li.menu-item-72 ul.sub-menu{  /*dropdown content*/
+	display:none;
+	position:absolute;
+	background-color: #FFFFFF;
+	z-index:1;
+}
+li.menu-item-72 .sub-menu a{
+	color:white;
+	display:block;
+	text-align:left;
+	padding-left:5px;
+}
+li.menu-item-72 ul.sub-menu a:hover{
+	display:block;
+	background-color:black;
+}
+li.menu-item-72:hover .sub-menu{
+	display:block;
+	width:11%;
+}
+li.menu-item-72:hover .sub-menu li{
+	display:block;
+	width:100%;
+	padding:0;
+}
+li.menu-item-72:hover .sub-menu li a{
+	display:block;
+}
+li.menu-item-72:hover .sub-menu li a:hover{
+	background-color:white;
+	color:black;
+}
+
+
+/* left nav */
+div#sidebar-left{
+	padding:0;
+}
+div#sidebar-left ul{
+	padding:0;
+	margin:0;
+}
+/* performance nav_menu-10 */
+#nav_menu-10 h3.widget-title{
+	content:url("http://localhost/wordpress/wp-content/uploads/2017/03/performance_logo.jpg");
+	width:100%;
+	margin:0;
+}
+#nav_menu-10 li{
+	border:1px solid DarkSlateGray ;
+	border-top:none;
+	background-color:dimgray;
+	text-align:center;
+}
+#nav_menu-10 li:first-of-type{
+	border-top:1px solid DarkSlateGray ;
+}
+#nav_menu-10 li:hover{
+	background-color:#898989;
+}
+#nav_menu-10 li a{
+	padding-left:5px;
+	overflow:hidden;
+	color:black;
+	text-decoration:none;
+}
+
+
+/* vendor nav_menu-14 */
+#nav_menu-14 h3.widget-title{
+	content:url("http://localhost/wordpress/wp-content/uploads/2017/03/vendor_logo.jpg");
+	width:100%;
+	margin:0;
+}
+#nav_menu-14 li{
+	border:1px solid DarkSlateGray ;
+	border-top:none;
+	background-color:dimgray;
+	text-align:center;
+}
+#nav_menu-14 li:first-of-type{
+	border-top:1px solid DarkSlateGray ;
+}
+#nav_menu-14 li:hover{
+	background-color:#898989;
+}
+#nav_menu-14 li a{
+	padding-left:5px;
+	overflow:hidden;
+	color:black;
+	text-decoration:none;
+}
+
+/* useful link nav_menu-15 */
+#nav_menu-15 h3.widget-title{
+	display:none;
+}
+.menu-useful-link-container img{
+	width:100%;
+}
+
+
+
+/*  right nav   */
+#sidebar-right{
+	padding:0;
+}
+#sidebar-right ul{
+	padding:0;
+	margin:0;
+}
+#sidebar-right li{
+	border:1px solid DarkSlateGray ;
+	border-top:none;
+	background-color:dimgray;
+	text-align:center;
+}
+#sidebar-right li:hover{
+	background-color:#898989;
+}
+#sidebar-right li:first-of-type{
+	border-top:1px solid DarkSlateGray ;
+}
+#sidebar-right li a{
+	padding-left:5px;
+	overflow:hidden;
+	color:black;
+	text-decoration:none;
+}
+
+/*   service nav_menu-9   */
+#nav_menu-9 h3.widget-title{
+	content:url("http://localhost/wordpress/wp-content/uploads/2017/03/vendor_logo.jpg");
+	width:100%;
+	margin:0;
+}
+
+/*   child organization nav_menu-12  */
+#nav_menu-12 h3.widget-title{
+	content:url("http://localhost/wordpress/wp-content/uploads/2017/03/vendor_logo.jpg");
+	width:100%;
+	margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*mine*/
 .site-header {
 	margin-bottom: 10px;
