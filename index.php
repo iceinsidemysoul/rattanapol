@@ -12,8 +12,8 @@
 				</div>
 			</article>
 			<?php endwhile;?>
-			<div class="nav-previous"><?php next_posts_link( 'ข่าวก่อนหน้า' ); ?></div>	 
-			<div class="nav-next"><?php previous_posts_link( 'ข่าวถัดไป' ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( 'ก่อนหน้า' ); ?></div>	 
+			<div class="nav-next"><?php previous_posts_link( 'ถัดไป' ); ?></div>
 			
 		<?php
 			else:
@@ -23,5 +23,3 @@
 	</div> <!-- end of post content area -->
 <?php get_sidebar('right'); ?>
 <?php get_footer(); ?>
-
-

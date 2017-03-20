@@ -1,19 +1,7 @@
 		<div class="row">
-		<div class="col-md-12">
-			<footer class="site-footer">
-				<nav class="site-nav">
-					<div class="row">
-						<?php
-							$args=array(
-								'theme_location'=>'footer'
-							);
-						?>
-						<?php wp_nav_menu($args); ?>
-					</div>
-				</nav>		
-				<p><a href="http://localhost/wordpress"><?php bloginfo('name'); ?></a> - &copy; <?php echo date('Y'); ?></p>
+			<footer class="site-footer">	
+				<p><a href="http://localhost/wordpress">กองพลพัฒนาที่ 4</a> ค่ายรัตนพล  ต.คลองหอยโข่ง  อ.คลองหอยโข่ง  จ.สงขลา  90230 โทร.074-501233-4</p>
 			</footer>
-		</div>
 		</div>
 	</div><!-- container-->
 	
