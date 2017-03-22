@@ -1,6 +1,7 @@
 /*
 Theme Name: Rattanapol
 Author: Private
+Description: beginner development
 Version: 1.0
 */
 /*  Table of contents
@@ -48,17 +49,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 div.container {
-	max-width: 1100px;
+	max-width: 1020px;
 	margin:0 auto;
 	padding-left:15px;
 	padding-right:15px;
 }
 header{
 	margin: 0 auto;
-	margin-bottom:0;
+	margin-bottom:15px;
 	padding-left: 15px;
 	padding-right: 15px;
-	border-bottom:3px solid #111111;
 }
 .site-header {
 	padding:2px 0 0 0;	
@@ -66,85 +66,129 @@ header{
 .nav-previous{
 	float:left;
 }
+.nav-previous a{
+	color:#153000;
+}
+.nav-previous a:hover{
+	color:#406000;
+	text-decoration:none;
+}
 .nav-next{
 	float:right;
 }
-
+.nav-next a{
+	color:#153000;
+}
+.nav-next a:hover{
+	color:#406000;
+	text-decoration:none;
+}
 /* 2.Navigation */
 
 /* 	2.1 Header navigation */
 
-/*  2.1.1 general  */
-
-.menu-primary-menu-links-container ul{
+nav.header-nav,
+div.menu-primary-menu-links-container {
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0;
+	border-top:1px solid black;
+	background:#274f00;
+	background: -webkit-linear-gradient(bottom,#336600, #0d1a00); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom,#336600, #0d1a00); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom,#336600, #0d1a00); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom,#336600, #0d1a00); /* Standard syntax */
+}
+div.menu-primary-menu-links-container  ul{
 	list-style:none;
 	margin:0;
 	padding:0;
-	overflow:hidden;
 }
-.menu-primary-menu-links-container ul li{
+div.menu-primary-menu-links-container>ul>li{
 	float:left;
-	padding-top:5px;
-	width:16.66667%;
-	background-color:dimgray;
-	text-align:center;
-	border:1px solid darkslategray;
+	background-color:#274f00;
+	background: -webkit-linear-gradient(bottom,#336600, #0d1a00); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom,#336600, #0d1a00); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom,#336600, #0d1a00); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom,#336600, #0d1a00); /* Standard syntax */
+	border-right:1px solid #336600;
 }
-.menu-primary-menu-links-container ul li a{
-	display:inline-block;
-	color:black;
-	text-decoration:none;
-}
-.menu-primary-menu-links-container ul li:hover{
-	background-color:#898989;
-}
-li.menu-item-72{/*dropdown */
+div.menu-primary-menu-links-container>ul>li:last-of-type{
 	border-right:none;
-    display: inline-block;
 }
-li.menu-item-72 ul.sub-menu{  /*dropdown content*/
+div.menu-primary-menu-links-container>ul>li:hover{
+	background:#336600;
+	border-radius:12px 12px 0 0;
+}
+div.menu-primary-menu-links-container ul li a{
+	text-decoration:none;
+	font-size:1.3em;
+	font-weight:500;
+	display:block;
+	color:#FFFFFF;
+	padding:15px 15px 5px 15px;
+	margin:0;
+}
+div.menu-primary-menu-links-container>ul>li>ul>li>a{
+	font-size:1.1em;
+	font-weight:200;
+}
+div.menu-primary-menu-links-container>ul>li>ul>li>ul>li>a{
+	font-size:1em;
+	font-weight:100;
+}
+div.menu-primary-menu-links-container>ul>li>ul{
 	display:none;
 	position:absolute;
 	z-index:1;
 }
-li.menu-item-72 .sub-menu a{
-	color:black;
-	display:block;
-	text-align:left;
-	padding-left:5px;
-}
-li.menu-item-72 ul.sub-menu a:hover{
+div.menu-primary-menu-links-container>ul>li:hover>ul{
 	display:block;
 }
-li.menu-item-72:hover .sub-menu{
+div.menu-primary-menu-links-container>ul>li>ul>li{
+	background-color:#336600;
+	border:2px solid #aaaaaa;
+	border-top:none;
+	border-bottom:none;
+}
+div.menu-primary-menu-links-container>ul>li>ul>li:first-of-type{
+	border-radius:20px 20px 0 0;
+	border-top:2px solid #aaaaaa;
+}
+div.menu-primary-menu-links-container>ul>li>ul>li:last-of-type{
+	border-radius:0 0 20px 20px;
+	border-bottom:2px solid #aaaaaa;
+}
+div.menu-primary-menu-links-container>ul>li>ul>li:hover{
+	background:#0d1a00;
+}
+div.menu-primary-menu-links-container>ul>li>ul>li>ul{
+	display:none;
+	position:absolute;
+	z-index:1;
+}
+div.menu-primary-menu-links-container>ul>li>ul>li:hover>ul{
 	display:block;
-	width:11%;
+	transform:translate(80%,-20%);
 }
-li.menu-item-72:hover .sub-menu li{
-	display:block;
-	width:100%;
-	padding:0;
+div.menu-primary-menu-links-container>ul>li>ul>li>ul>li{
+	background:#0d1a00;
+	border:2px solid #aaaaaa;
+	border-top:none;
+	border-bottom:none;
 }
-li.menu-item-72:hover .sub-menu li a{
-	display:block;
+div.menu-primary-menu-links-container>ul>li>ul>li>ul>li:first-of-type{
+	border-radius:20px 20px 0 0;
+	border-top:2px solid #aaaaaa;
 }
-li.menu-item-72:hover .sub-menu li a:hover{
-	background-color:#898989;
-	color:black;
+div.menu-primary-menu-links-container>ul>li>ul>li>ul>li:last-of-type{
+	border-radius:0 0 20px 20px;
+	border-bottom:2px solid #aaaaaa;
 }
-
-/* 2.1.2 media query medium */
-@media screen and (max-width: 992px){
-	.menu-primary-menu-links-container ul li{
-		width:100%;
-	}
-	li.menu-item-72:hover .sub-menu{
-		width:94%;
-	}
+div.menu-primary-menu-links-container>ul>li>ul>li>ul>li:hover{
+	background-color:#336600;
 }
-
-/* 2.1.3 media query small */
-
 
 /* 2.2 left side navigation */
 
@@ -155,10 +199,6 @@ li.menu-item-72:hover .sub-menu li a:hover{
 	padding:0;
 	margin:0;
 	list-style:none;	
-}
-.fb-logo{
-	width:100%;
-	margin-bottom:1px;
 }
 /* 2.2.1 performance menu */
 
@@ -223,40 +263,7 @@ li.menu-item-72:hover .sub-menu li a:hover{
 
 /* 2.2.4 left side - media query medium */
 
-@media screen and (max-width:992px){
-	
-	
-	/*  Performance  */
-	#nav_menu-10 h3.widget-title{
-		max-height:150px;
-	}
-	/*  Vendor  */
-	#nav_menu-14 h3.widget-title{
-		max-height:150px;
-	}
-	/*  useful link  */
-	.menu-useful-link-container img{
-		max-height:200px;
-	}
-}
-
 /* 2.2.5 left side - media query small */
-
-@media screen and (max-width:768px){
-	
-	/*  Performance  */
-	#nav_menu-10 h3.widget-title{
-		max-height:110px;
-	}
-	/*  Vendor  */
-	#nav_menu-14 h3.widget-title{
-		max-height:110px;
-	}
-	/*  useful link  */
-	.menu-useful-link-container img{
-		max-height:150px;
-	}
-}
 
 /* 2.3 Right side navigation   */
 
@@ -287,72 +294,26 @@ li.menu-item-72:hover .sub-menu li a:hover{
 }
 .commander-img{
 	width:100%;
+	margin-bottom:1px;
 }
-/*  2.3.1 service menu  */
-#nav_menu-9 h3.widget-title{
-	content:url("http://localhost/wordpress/wp-content/uploads/2017/03/service_logo.jpg");
+.fb-logo{
 	width:100%;
-	margin:0;
 }
-#nav_menu-9 li a{	
-	padding-left:35px;
-	padding-right:35px;
-}
-
-/*  2.3.2 child organization menu */
-#nav_menu-12 h3.widget-title{
-	content:url("http://localhost/wordpress/wp-content/uploads/2017/03/child_organization_logo.jpg");
-	width:100%;
-	margin:0;
-}
-#nav_menu-12 li a{	
-	padding-left:35px;
-	padding-right:35px;
-}
-
 /* 2.3.3 search widget  */
 
 #search-3 h3{
-	background-color:dimgray;
+	background:#EEEEEE;
 	color:black;
+}
+input#searchsubmit{
+	border:none;
+	background:#336600;
+	color:white;
+	font-weight:450;
 }
 
 .screen-reader-text{
 	display:none;
-}
-
-/* 2.3.4 archives  */
-#archives-5 li{
-	color:darkblue;
-}
-
-/* 2.3.5 right side - media query medium */
-
-@media screen and (max-width:992px){
-	
-	
-	/*  Service Menu  */
-	#nav_menu-9 h3.widget-title{
-		max-height:150px;
-	}
-	/*  child organization Menu  */
-	#nav_menu-12 h3.widget-title{
-		max-height:150px;
-	}
-}
-
-/* 2.3.6 right side - media query small */
-
-@media screen and (max-width:768px){
-	
-	/*  Service Menu  */
-	#nav_menu-9 h3.widget-title{
-		max-height:110px;
-	}
-	/*  child organization Menu  */
-	#nav_menu-12 h3.widget-title{
-		max-height:110px;
-	}
 }
 
 /* 2.4 Footer Navigation */
@@ -382,25 +343,20 @@ p img{
 	max-height:240px;
 	margin:5px 0px 5px 0px;
 }
-@media screen and (max-width:768px){
-	p img{
-		width:80%;
-	}
-}
 article p{
 	color:#999;
 	margin-bottom:5px;
 }
 /*	4.1 index.php  */
 article.post {
-	border-bottom: 1px dotted #DDD;
-	margin-top: 15px;
+	border: 1px solid #112200;
+	background:white;
+	padding: 5px;
+	margin: 15px;
 }
-article.single-post h2 {
-	font-size: 225%;
-	margin-bottom: 15px;
+article.post h2>a:hover{
+	text-decoration:none;
 }
-
 /*	4.1.1 featured image  */
 
 /*	4.1.2 post title  */
@@ -411,8 +367,10 @@ article.single-post h2 {
 
 /*	4.2 single.php  */
 article.single-post {
-	border: none;
-	margin-top: 15px;
+	border: 1px solid #112200;
+	background:white;
+	padding: 5px;
+	margin: 15px;
 }
 article.single-post h2 {
 	font-size: 225%;
@@ -426,23 +384,23 @@ article.single-post h2 {
 /*	4.2.3 Image  */
 
 /*	4.3 page.php */
-article.paged {
-	border: none;
-	padding:15px 10px 15px 10px;
-	margin-top: 5px;
-	background-color:#222;
+article.single-page {
+	border: 1px solid #112200;
+	background:white;
+	padding: 5px;
+	margin: 15px;
 }
-article.paged h2 {
+article.single-page h2 {
 	display:none;
 }
-.paged img{
+.single-page img{
 	max-width:100%;
 }
-.paged a{
+.single-page a{
 	text-decoration:none;
 	color:#337ab7;
 }
-.paged a:hover{
+.single-page a:hover{
 	text-decoration:none;
 	color:#494949;
 }

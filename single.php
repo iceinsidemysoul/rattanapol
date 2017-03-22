@@ -1,7 +1,6 @@
 <?php get_header(); ?>
-<?php get_sidebar('left'); ?>
- 
-	<div class="col-md-8">
+<div class="row"> <!-- main-area -->
+	<div class="col-md-9">
     <?php if(have_posts()):
 		while(have_posts()): the_post(); ?>
 		<article class="single-post">
